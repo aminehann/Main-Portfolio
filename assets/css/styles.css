@@ -342,22 +342,22 @@ img {
 }
 
 .home__image{
+  position: relative;
   width: 250px;
   margin: 0 auto;
 }
 .home__img{
-  position: relative;
   z-index: 10;
 }
 .home__shadow{
   position: absolute;
-  top: 10px;
-  left: 20%;
+  top: 1rem;
+  left: 1rem;
   width: 250px;
   height: 360px;
   background-color: var(--container-color);
   border: var(--black-color) 4px solid;
-  z-index: 5;
+  z-index: -1;
   transition: background-color .4s;
 }
 
@@ -366,30 +366,31 @@ img {
   position: absolute;
   width: 50px;
   filter: invert(1);
+  z-index: -10;
 }
 
 .home__arrow{
-  bottom:35px;
-  left: 45%;
+  top:360px;
+  left: 125px;
 }
 
 .home__lines{
-  bottom:250px;
-  left: 80%;
+  top: 150px;
+  left: 240px;
 }
 
 .home__perfil .geometric-box{
   position: absolute;
-  top: 5rem;
-  left: 12.5%;
+  top: 80px;
+  left: -5px;
   z-index: 10;
 }
 
 .home__social{
-  width: max-content;
+ /*  width: max-content; */
   position: absolute;
-  top: 8rem;
-  left: 0;
+  top: 110px;
+  left: -70px;
   display: grid;
   row-gap: 1.5rem;
 }
