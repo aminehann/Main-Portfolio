@@ -327,6 +327,108 @@ img {
 /* Active link */
 
 /*=============== HOME ===============*/
+.home__container{
+  padding-top: 2rem;
+}
+
+.home__name{
+  text-align: center;
+  font-size: var(--biggest-font-size);
+}
+
+.home__perfil{
+  position: relative;
+  justify-self: center;
+}
+
+.home__image{
+  width: 250px;
+  margin: 0 auto;
+}
+.home__img{
+  position: relative;
+  z-index: 10;
+}
+.home__shadow{
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  width: 250px;
+  height: 360px;
+  background-color: var(--container-color);
+  border: var(--black-color) 4px solid;
+  z-index: 5;
+  transition: background-color .4s;
+}
+
+.home__arrow,
+.home__lines{
+  position: absolute;
+  width: 50px;
+  filter: invert(1);
+}
+
+.home__arrow{
+  bottom:35px;
+  left: 45%;
+}
+
+.home__lines{
+  bottom:250px;
+  left: 80%;
+}
+
+.home__perfil .geometric-box{
+  position: absolute;
+  top: 5rem;
+  left: 12.5%;
+  z-index: 10;
+}
+
+.home__social{
+  width: max-content;
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.home__social-link{
+  background-color: var(--black-color-light);
+  color: var(--white-color);
+  font-size: 1.5rem;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  transition: background-color .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Animate scroll icon */
 
