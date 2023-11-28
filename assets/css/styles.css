@@ -343,7 +343,7 @@ img {
 
 .home__image{
   position: relative;
-  width: 250px;
+  width: 220px;
   margin: 0 auto;
 }
 .home__img{
@@ -353,8 +353,8 @@ img {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  width: 250px;
-  height: 360px;
+  width: 220px;
+  height: 315px;
   background-color: var(--container-color);
   border: var(--black-color) 4px solid;
   z-index: -1;
@@ -370,13 +370,13 @@ img {
 }
 
 .home__arrow{
-  top:360px;
-  left: 125px;
+  top:315px;
+  left: 105px;
 }
 
 .home__lines{
-  top: 150px;
-  left: 240px;
+  top: 125px;
+  left: 210px;
 }
 
 .home__perfil .geometric-box{
@@ -387,10 +387,10 @@ img {
 }
 
 .home__social{
- /*  width: max-content; */
+  width: max-content;
   position: absolute;
-  top: 110px;
-  left: -70px;
+  top: 100px;
+  left: -65px;
   display: grid;
   row-gap: 1.5rem;
 }
