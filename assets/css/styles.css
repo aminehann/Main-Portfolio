@@ -390,7 +390,7 @@ img {
   width: max-content;
   position: absolute;
   top: 100px;
-  left: -65px;
+  left: -50px;
   display: grid;
   row-gap: 1.5rem;
 }
