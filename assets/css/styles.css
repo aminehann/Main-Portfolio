@@ -466,7 +466,107 @@ img {
 /*=============== BUTTON ===============*/
 
 /*=============== ABOUT ===============*/
+.about__image{
+  position: relative;
+  width: 220px;
+  margin: 0 auto;
+}
+.about__img{
+  z-index: 10;
+  border: var(--white-color) 4px solid;
+}
+.about__shadow{
+  position: absolute;
+  top: -2.5rem;
+  left: 6rem;
+  width: 200px;
+  height: 400px;
+  background-color: var(--container-color);
+  border-bottom: rgb(227,68,14,1) 4px solid;
+  z-index: -10;
+  transition: background-color .4s;
+}
 
+.about__arrow,
+.about__lines{
+  position: absolute;
+  width: 50px;
+  filter: invert(1);
+  z-index: -10;
+}
+
+.about__arrow{
+  display: none;
+  top:290px;
+  left: 105px;
+}
+
+.about__lines{
+  top: 125px;
+  left: 190px;
+}
+
+.about__image .geometric-box{
+  position: absolute;
+  top: 40px;
+  left: 250px;
+  z-index: 10;
+}
+
+.about__description{
+  text-align: center;
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.about__item{
+  text-align: center;
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  margin-bottom: 2rem;
+}
+
+.about__buttons{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: var(--h2-font-size);
+  padding: 1rem 1.2rem;
+  transition: background-color .4s;
+}
+
+.button:hover{
+  background-color: rgb(227,68,14,1);
+}
+
+.button__ghost{
+  background-color: var(--body-color);
+  border: var(--black-color) 3px solid;
+  color: var(--black-color);
+  font-weight: var(--h2-font-size);
+  font-size: var(--h2-font-size);
+  padding: .4rem .5rem;
+  transition: border .4s;
+  transition: color .4s;
+
+}
+
+.button__ghost:hover{
+  color: rgb(227,68,14,1);
+  border: rgb(227,68,14,1) 3px solid;
+}
 /*=============== SERVICES ===============*/
 
 /*=============== PROJECTS ===============*/
