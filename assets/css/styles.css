@@ -592,7 +592,20 @@ img {
   border: rgb(227,68,14,1) 3px solid;
 }
 /*=============== SERVICES ===============*/
+.services__section{
+background-color: var(--white-color);
+margin-top: 4rem;
+padding-top: 4rem;
+}
 
+.services__box {
+ background-color: var(--body-color);
+ border: var(--black-color) 4px solid ;
+ width: 280px;
+ height: 450px;
+
+
+}
 /*=============== PROJECTS ===============*/
 
 /*=============== CONTACT ===============*/
