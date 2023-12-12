@@ -176,7 +176,10 @@ img {
   width: 100%;
   background-color: var(--body-color);
   z-index: var(--z-fixed);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: .3rem 0rem;
   transition: box-shadow 0.4s;
+  
 }
 
 .nav {
@@ -601,35 +604,19 @@ img {
 .services__box {
   position: relative;
   background-color: var(--white-color);
-  border: var(--first-color) 4px solid;
-  width: 320px;
-  height: 350px;
+  border: var(--black-color) 4px solid;
+  width: 270px;
+  height: 320px;
   margin: 1.2rem auto;
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
   padding: 2rem;
-  z-index: 1;
+  z-index: 5;
 }
-.services__box:hover{
-  transform: translateX(0.5rem);
-  transform: translateY(0.5rem);
-  transform: rotate(5deg);
-  transition: border 1s;
-  transition: transform 1s;
-}
-
-.services__box::after{
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: var(--white-color);
-  border: var(--black-color) 4px solid;
-  position: absolute;
-  top: .5rem;
-  right: .5rem;
-  z-index: -10;
+.services__box:hover {
+  animation: shadow-pop-tr 1s ease;
 }
 
 .services__icon {
@@ -641,7 +628,7 @@ img {
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
   color: var(--black-color);
-  z-index: 1;
+  z-index: 5;
 }
 .services__icon__shadow {
   position: absolute;
@@ -657,11 +644,14 @@ img {
   margin-bottom: 1.5rem;
 }
 .services__description {
-  font-size: var(--h3-font-size);
+  font-size: .9rem;
 }
 
 
 /*=============== PROJECTS ===============*/
+
+
+
 
 /*=============== CONTACT ===============*/
 
@@ -676,6 +666,21 @@ img {
 /*=============== SCROLL UP ===============*/
 
 /* Show Scroll Up */
+/*=============== ANIMATIONS ===============*/
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color);
+            box-shadow: 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color);
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    -webkit-box-shadow: 1px -1px var(--first-color), 2px -2px var(--first-color), 3px -3px var(--first-color), 4px -4px var(--first-color), 5px -5px var(--first-color), 6px -6px var(--first-color), 7px -7px var(--first-color), 8px -8px var(--first-color);
+            box-shadow: 1px -1px var(--first-color), 2px -2px var(--first-color), 3px -3px var(--first-color), 4px -4px var(--first-color), 5px -5px var(--first-color), 6px -6px var(--first-color), 7px -7px var(--first-color), 8px -8px var(--first-color);
+    -webkit-transform: translateX(-8px) translateY(8px);
+            transform: translateX(-8px) translateY(8px);
+  }
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
