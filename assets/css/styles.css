@@ -600,6 +600,7 @@ img {
   background-color: var(--white-color);
   margin-top: 4rem;
   padding: 4rem 0rem;
+  transition: background-color .4s;
 }
 .services__box {
   position: relative;
@@ -614,6 +615,7 @@ img {
   justify-content: center;
   padding: 2rem;
   z-index: 5;
+  transition: background-color .4s;
 }
 .services__box:hover {
   animation: shadow-pop-tr 1s ease;
@@ -649,6 +651,81 @@ img {
 
 
 /*=============== PROJECTS ===============*/
+
+.projects__container{
+  display: grid;
+  row-gap: 3rem;
+}
+.projects__card{
+  background-color: var(--body-color);
+  padding: 1.2rem 1rem;
+  width: 330px;
+  margin: 0 auto;
+  transition: background-color .4s;
+}
+
+.projects__card:hover{
+  background-color: var(--white-color);
+}
+.projects__image{
+position: relative;
+}
+
+.projects__button{
+  font-size: var(--h2-font-size);
+position: absolute;
+bottom: -1.5rem;
+right: 1.2rem;
+}
+
+.projects__button:hover{
+  background-color: var(--first-color);
+  transform: translate(0.1rem);
+  transition: transform .5s;
+}
+.projects__subtitle{
+  position: relative;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin: 1.2rem;
+}
+
+.projects__subtitle::before{
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 2px;
+  top: 50%;
+  left: -10%;
+  background-color: var(--black-color);
+}
+.projects__title,.projects__description{
+  margin-bottom: 1rem;
+}
+
+.projects__link{
+  display: flex;
+  gap: 2rem;
+
+}
+
+.projects__link__github, .projects__link__dribble{
+  cursor: pointer;
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+  margin: .8rem 0;
+}
+
+.projects__link__github:hover, .projects__link__dribble:hover{
+  color: var(--first-color);
+  transition: color .5s;
+}
+
+
+
+
 
 
 
