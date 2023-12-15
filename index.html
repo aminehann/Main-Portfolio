@@ -413,11 +413,12 @@
       <section class="contact section" id="contact">
         <h2 class="section__title-1"><span>Contact Me.</span></h2>
         <div class="contact__container container grid">
+          
           <div class="contact__card__description">
             <div class="geometric-box"></div>
             <p class="contact__description">
-              I will read all emails. Send me any message you want and I'll get
-              back to you.
+              <b>I will read all emails. Send me any message you want and I'll get
+              back to you.</b>
             </p>
             <p class="contact__description">
               I need your <b>Name</b> and <b>Email Address</b>, but you won't
@@ -425,9 +426,40 @@
             </p>
           </div>
 
-          <div class="contact__form">
+          <div class="contact__form__container">
             <h3 class="contact__form__title">Send Me A Message</h3>
-            <form action="">
+            <form action=""id="contact-form">
+
+              <div class="form__input">
+                <input type="text" id="name" name="user_name"required>
+                <label for="name">First Name</label>
+              </div>
+
+              <div class="form__input">
+                <input type="email" id="email" name="user_email"required>
+                <label for="email">Email</label>
+              </div>
+
+              <div class="form__input">
+                <input type="text" id="subject" name="user_name"required>
+                <label for="subject">Subject</label>
+              </div>
+
+              <div class="form__input form__input__textarea">
+               <textarea name="message" id="message" required></textarea>
+                <label for="message">Message</label>
+              </div>
+
+              <button type="submit" class="form__submit__button button">
+                <i class="ri-send-plane-line"></i>
+                <p>Send Message</p>
+              </button>
+
+
+
+
+              
+              
 
 
 
@@ -441,7 +473,7 @@
 
             </form>
           </div>
-          <div class="contact__social__description">
+          <div class="contact__social">
 
 
 
