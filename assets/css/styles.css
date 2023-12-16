@@ -739,7 +739,6 @@ img {
   border-bottom: var(--first-color) 4px solid;
   transition: background-color 0.4s;
   margin: 0 auto;
-  z-index: 100;
 }
 .geometric-box {
   position: absolute;
@@ -812,12 +811,51 @@ img {
   background-color: var(--first-color);
 }
 
+.contact__social{
+  background-color: var(--black-color-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__curved-arrow{
+  margin-top: 2rem;
+  width: 50px;
+}
+
+.contact__social__description-1{
+color: var(--white-color);
+margin-top: 2rem;
+}
+
+.contact__social__description-2{
+  color: var(--white-color);
+  font-weight: 600;
+  margin-top: .5rem;
+}
+
+.contact__social__icons{
+  margin: 2rem 0;
+}
+.contact__social__icons a i {
+  padding: .5rem;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.contact__social__icons a i:hover {
+  background-color: var(--first-color);
+  transition: background-color .5s;
+}
+
 /* Opaque placeholder */
 
 /* Move label up & sticky label */
 
 /*=============== FOOTER ===============*/
-
+.copyright{
+  color: var(--black-color);
+}
 /*=============== SCROLL BAR ===============*/
 
 /*=============== SCROLL UP ===============*/
