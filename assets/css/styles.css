@@ -732,16 +732,21 @@ img {
   position: relative;
 }
 .contact__card__description {
-  width: 350px;
+  position: absolute;
+  top: 0rem;
+  right: -1rem;
+  width: 330px;
   background-color: var(--body-color);
   border-bottom: var(--first-color) 4px solid;
   transition: background-color 0.4s;
   margin: 0 auto;
+  z-index: 100;
 }
 .geometric-box {
   position: absolute;
-  right: 5rem;
+  right: 3rem;
   top: -0.5rem;
+  
 }
 .contact__description {
   margin: 3rem 2rem;
@@ -751,11 +756,12 @@ img {
   background-color: var(--black-color);
   display: grid;
   place-items: center;
-  margin: 0 auto;
   padding: 2rem 1rem;
+  margin-top: 200px;
 }
 .contact__form__title {
   color: var(--white-color);
+  margin-top: 4rem;
   margin-bottom: 2.5rem;
   font-size: var(--h2-font-size);
 }
@@ -764,7 +770,7 @@ img {
   /* margin: auto 0; */
 }
 .form__input input {
-  width: 350px;
+  width: 320px;
   height: 60px;
   border: white 2px solid;
   margin-bottom: 2rem;
@@ -789,7 +795,7 @@ img {
 }
 
 .form__input textarea {
-  width: 350px;
+  width: 320px;
   height: 150px;
   padding: 1.5rem 1rem;
   margin-bottom: 1rem;
@@ -799,7 +805,7 @@ img {
 }
 
 .form__submit__button {
-  width: 350px;
+  width: 320px;
   border: none;
   color: var(--white-color);
   font-size: var(--font-regular);
