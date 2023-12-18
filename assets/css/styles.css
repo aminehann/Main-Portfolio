@@ -113,7 +113,7 @@ img {
 }
 
 .section {
-  padding-block: 4rem 2rem;
+  padding-block: 4rem 0rem;
 }
 
 .section__title-1,
@@ -744,7 +744,6 @@ img {
   position: absolute;
   right: 3rem;
   top: -0.5rem;
-  
 }
 .contact__description {
   margin: 3rem 2rem;
@@ -766,7 +765,6 @@ img {
 }
 .form__input {
   position: relative;
-  /* margin: auto 0; */
 }
 .form__input input {
   width: 330px;
@@ -781,7 +779,6 @@ img {
 
 .form__input input {
   background-color: var(--black-color);
-  
 }
 
 .form__input label {
@@ -811,50 +808,77 @@ img {
   background-color: var(--first-color);
 }
 
-.contact__social{
+.contact__social {
   background-color: var(--black-color-light);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact__curved-arrow{
-  margin-top: 2rem;
+.contact__curved-arrow {
+  margin-top: 1rem;
   width: 50px;
 }
 
-.contact__social__description-1{
-color: var(--white-color);
-margin-top: 2rem;
+.contact__social__description-1 {
+  color: var(--white-color);
+  margin-top: 1rem;
 }
 
-.contact__social__description-2{
+.contact__social__description-2 {
   color: var(--white-color);
   font-weight: 600;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.contact__social__icons{
+.contact__social__icons {
   margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
 }
 .contact__social__icons a i {
-  padding: .5rem;
+  font-size: var(--h2-font-size);
+  padding: 0.5rem;
   color: var(--white-color);
   background-color: var(--black-color);
 }
 
 .contact__social__icons a i:hover {
   background-color: var(--first-color);
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 /* Opaque placeholder */
 
+/* .form__input input:focus::placeholder {
+  opacity: 0;
+} */
+
 /* Move label up & sticky label */
 
 /*=============== FOOTER ===============*/
-.copyright{
-  color: var(--black-color);
+.footer {
+  background-color: var(--black-color);
+  padding: 3rem 0;
+}
+.footer__links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-weight: var(--font-bold);
+}
+.footer__link {
+  color: var(--white-color);
+}
+
+.footer__link:hover {
+  color: var(--first-color);
+  transition: color 0.4s;
+}
+.copyright {
+  color: var(--white-color);
+  margin-top: 3rem;
+  text-align: center;
 }
 /*=============== SCROLL BAR ===============*/
 
@@ -862,7 +886,7 @@ margin-top: 2rem;
 
 /* Show Scroll Up */
 /*=============== ANIMATIONS ===============*/
-@-webkit-keyframes shadow-pop-tr {
+@keyframes shadow-pop-tr {
   0% {
     -webkit-box-shadow: 0 0 var(--first-color), 0 0 var(--first-color),
       0 0 var(--first-color), 0 0 var(--first-color), 0 0 var(--first-color),
@@ -886,7 +910,6 @@ margin-top: 2rem;
     transform: translateX(-8px) translateY(8px);
   }
 }
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
